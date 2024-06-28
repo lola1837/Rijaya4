@@ -480,12 +480,14 @@ nav ul li a{
 .row-2{
     justify-content: space-between;
     margin: 100px auto 50px;
+    
 }
 
 select{
-    border: 1px solid #ff523b;
+    border: 1px solid #498acfcd;
     padding: 5px;
 }
+
 select:focus{
     outline: none;
 }
@@ -496,7 +498,7 @@ select:focus{
 
 .page-btn span{
     display: inline-block;
-    border: 1px solid #ff523b;
+    border: 1px solid #498acfcd;
     margin-left: 10px;
     width: 40px;
     height: 40px;
@@ -504,9 +506,10 @@ select:focus{
     line-height: 40px;
     cursor: pointer;
 }
+
 .page-btn span:hover{
-    background: #ff523b;
-    color: #fff;
+    background: radial-gradient(#fff, #d6edff);
+    color: #555;
 }
 
 
@@ -540,14 +543,14 @@ select:focus{
     padding-left: 10px;
     font-size: 20px;
     margin-right: 10px;
-    border: 1px solid #ff523b;
+    border: 1px solid #498acfcd;
 }
 input:focus{
     outline: none;
 }
 
 .single-product .fa{
-    color: #ff523b;
+    color: #498acfcd;
     margin-left: 10px;
 }
 .small-img-row{
@@ -597,7 +600,7 @@ th{
     text-align: left;
     padding: 5px;
     color: #fff;
-    background: #ff523b;
+    background: #498acfcd;
     font-weight: normal;
 }
 
@@ -611,8 +614,8 @@ td input{
 }
 
 td a{
-    color: #ff523b;
-    font-size: 12px;
+    color: #1273b8;
+    font-size: 13px;
 }
 
 td img{
@@ -628,7 +631,7 @@ td img{
     
 }
 .total-price table{
-    border-top: 3px solid #ff523b;
+    border-top: 3px solid #498acfcd;
     width: 100%;
     max-width: 350px;
 }
@@ -645,6 +648,62 @@ th:last-child{
     }
 }
 
+.total-price .btn-2{
+    .btn-2{
+        position: relative;
+        display: inline-block;
+        padding: 3px 7px;
+        text-decoration: none;
+        color: #000;
+        border: 3px solid;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        margin-bottom: 50px;
+        margin-top: 22px;
+    }
+    .total-price .btn-2:hover{
+        background-color: #03468ecd;
+        box-shadow: 0 0 20px var(--color);
+        border-color: var(--color);
+        color: #fff;
+    }
+    
+    .total-price .btn-2 span:nth-child(n) {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: 3px solid;
+        transition: all 0.6s ease;
+    }
+    
+    .total-price .btn-2 span:nth-child(1) {
+        right: 10%;
+        top: -10px;
+        background-color: #fff;
+    }
+    
+    .total-price .btn-2 span:nth-child(2) {
+        left: 10%;
+        bottom: -10px;
+        background-color: #fff;
+    }
+    
+    .total-price .btn-2:hover span:nth-child(1) {
+        right: 80%;
+        transform: rotate(90deg);
+        background-color: var(--color);
+    }
+    
+    .total-price .btn-2:hover span:nth-child(2) {
+        left: 80%;
+        transform: rotate(90deg);
+        background-color: var(--color);
+    }
+    
+    :root {
+        --color: #78a7ffdd;
+    }
+}
 /*-------account page--------*/
 
 .accout-page{
@@ -680,7 +739,7 @@ th:last-child{
 #indicator{
     width: 100px;
     border: none;
-    background: #ff523b;
+    background: #498acfcd;
     height: 3px;
     margin-top: 8px;
     transform: translateX(100px);
@@ -797,3 +856,4 @@ form a{
 .footer-section.copyright p {
     color: #000000d0;
 }
+
